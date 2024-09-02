@@ -22,7 +22,7 @@ Welcome to the WatchShop (frontend) repository! This project contains the HTML, 
  
 ## Live Demo
 
-You can view the live demo of the WatchShop frontend [here](https://your-live-demo-url.com).
+You can view the live demo of the WatchShop frontend [here](https://watchshopn.netlify.app/).
 
 ## Setup Instructions
 To set up and run the WatchShop frontend locally, follow these steps:
