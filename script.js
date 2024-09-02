@@ -40,7 +40,7 @@ function watchUpload(event) {
     })
     .catch((error)=> {
         console.log('Error :',error);
-        alert('Failed to connect to the server. Please make sure the server is running.') });
+         });
 }
 
 
@@ -72,7 +72,8 @@ function watchDisplay() {
     })
     .catch((error)=> {
         console.log('Error :',error);
-        alert('Failed to connect to the server. Please make sure the server is running.') });}
+         });
+}
 
 
 
