@@ -28,7 +28,7 @@ function watchUpload(event) {
     for (let pair of formData.entries()) {
         console.log(pair[0], ' -> ', pair[1]); // prints the key and value
     }
-    fetch('http://127.0.0.1:8000/api/watchCreate', {
+    fetch('https://nthasneem03.pythonanywhere.com/api/watchCreate', {
         method: 'POST',
         body: formData,
     })
@@ -49,12 +49,12 @@ function watchUpload(event) {
 // display or GET watches
 
 function watchDisplay() {
-    fetch('http://127.0.0.1:8000/api/watchList')
+    fetch('https://nthasneem03.pythonanywhere.com/api/watchList')
     .then(response => response.json())
     .then(data => {
         const watchContainer = document.querySelector('.watch-container'); 
         watchContainer.innerHTML = ''; 
-        const baseURL = 'http://127.0.0.1:8000';
+        const baseURL = 'https://nthasneem03.pythonanywhere.com';
         data.forEach(watch => { 
             const imgURL = baseURL + watch.image;
             const watchHTML = ` 
