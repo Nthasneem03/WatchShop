@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <title>Watch Shop</title>
+    <!-- Add Bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Add Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Customized styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("images/5.jpg");
+      background-repeat: repeat-x;
+      background-size: cover;
+      background-position: center;
+      padding-left: 50px;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  </style>
+  <body>
+    <!-- Navbar Section-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid p-2">
+        <a class="navbar-brand ps-3" href="#">
+          <img
+            src="images/about-img.png"
+            alt=""
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top pe-1"
+          />Watch Shop</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center ps-3"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="uploadWatch.html">Upload </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="watchList.html">Watches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1 class="h2 text-center p-3">Discover Your Perfect Watch</h1>
+      <p class="lead text-center">
+        "Welcome to Watch Shop, where timeless elegance meets modern innovation.
+        Explore our curated collections of smart, sports, and luxury watches,
+        and find the timepiece that best suits your style and needs."
+      </p>
+      <div
+        id="heroCarousel"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row p-5">
+                <div class="col-md-6 d-flex align-items-center">
+                  <img
+                    src="images/slider 1.png"
+                    class="img-fluid"
+                    alt="..."
+                    style="max-width: 500px; width: 100%"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card card-body">
+                    <h5 class="card-title h4 pb-3">Smart Watches</h5>
+                    <p class="card-text">
+                      Keep track of your schedule with calendar navigation, stay
+                      fit with built-in fitness trackers, and handle
+                      calculations on the go with integrated calculators. Our
+                      smart watches are designed to enhance your daily life. Get
+                      high-quality watches to meet today's growing need to adapt
+                      smartness.
+                    </p>
+                    <a href="watchList.html" class="btn btn-dark"
+                      >View Watches</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row p-5">
+                <div class="col-md-6 d-flex align-items-center">
+                  <img
+                    src="images/slider 6.png"
+                    class="img-fluid"
+                    alt="..."
+                    style="max-width: 500px; width: 100%"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card card-body">
+                    <h5 class="card-title h4 pb-3">Sports Watches</h5>
+                    <p class="card-text">
+                      Engineered for endurance and performance, our sports
+                      watches are designed to meet the demands of your active
+                      lifestyle. From high-impact training to underwater
+                      adventures, these watches are your perfect companions.
+                      Built to last, they feature water resistance,
+                      shock-proofing, and GPS tracking.
+                    </p>
+                    <a href="watchList.html" class="btn btn-dark"
+                      >View Watches</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row p-5">
+                <div class="col-md-6 d-flex align-items-center">
+                  <img
+                    src="images/slider 5.png"
+                    class="img-fluid"
+                    alt="..."
+                    style="max-width: 500px; width: 100%"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card card-body">
+                    <h5 class="card-title h4 pb-3">Luxury Watches</h5>
+                    <p class="card-text">
+                      Step into a world of elegance with our curated selection
+                      of luxury watches. Each timepiece is a masterpiece of
+                      craftsmanship, blending traditional watchmaking techniques
+                      with modern innovation. Whether for a formal event or a
+                      casual outing, these watches add a touch of sophistication
+                      to any outfit.
+                    </p>
+                    <a href="watchList.html" class="btn btn-dark"
+                      >View Watches</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Watch List -->
+    <section id="watchList" class="my-5">
+      <h1 class="h1 text-center">Latest Watches</h1>
+      <div class="text-center">
+        <a href="watchList.html" class="btn my-3">View Latest Watches</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="my-5">
+      <div class="container">
+        <div class="row d-flex">
+          <div
+            class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="images/about-img.png"
+              class="img-fluid ps-5"
+              alt="about"
+            />
+          </div>
+          <div class="col-md-8 d-flex align-items-center">
+            <div class="card-body ps-5">
+              <h1 class="card-title mb-5 h1">About Us</h1>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer. This is a wider card with supporting text below as a
+                natural lead-in to additional content. This content is a little
+                bit longer. This is a wider card with supporting text below as a
+                natural lead-in to additional content. This content is a little
+                bit longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">
+                  <a class="btn text-center mt-3" href="about.html"
+                    >Read More</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="my-5">
+      <h1 class="h1 text-center mb-4">Features</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="box shadow text-center p-3 border rounded">
+              <div class="img-box mb-3">
+                <img
+                  src="images/f1.png"
+                  alt="Fitness Tracking Watch"
+                  class="img-fluid"
+                  style="max-width: 60%"
+                />
+              </div>
+              <div class="detail-box">
+                <h5>Fitness Tracking</h5>
+                <p>
+                  Stay on top of your fitness goals with our advanced fitness
+                  tracking watch. Monitor your steps, heart rate, and calories
+                  burned seamlessly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="box shadow text-center p-3 border rounded">
+              <div class="img-box mb-3">
+                <img
+                  src="images/f2.png"
+                  alt="Alerts & Notifications Watch"
+                  class="img-fluid"
+                  style="max-width: 60%"
+                />
+              </div>
+              <div class="detail-box">
+                <h5>Alerts &amp; Notifications</h5>
+                <p>
+                  Never miss an important update with our watch that keeps you
+                  connected to all your alerts and notifications on the go.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="box shadow text-center p-3 border rounded">
+              <div class="img-box mb-3">
+                <img
+                  src="images/f3.png"
+                  alt="Messages Watch"
+                  class="img-fluid"
+                  style="max-width: 60%"
+                />
+              </div>
+              <div class="detail-box">
+                <h5>Messages</h5>
+                <p>
+                  Read and respond to messages directly from your wrist. Stay
+                  connected with ease and convenience wherever you are.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="box shadow text-center p-3 border rounded">
+              <div class="img-box mb-3">
+                <img
+                  src="images/f4.png"
+                  alt="Bluetooth Watch"
+                  class="img-fluid"
+                  style="max-width: 60%"
+                />
+              </div>
+              <div class="detail-box">
+                <h5>Bluetooth</h5>
+                <p>
+                  Enjoy hands-free communication and music control with our
+                  Bluetooth-enabled watch, designed for convenience and style.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="my-5">
+      <div class="container p-5">
+        <div class="row d-flex">
+          <div class="col-md-7 align-self-center">
+            <h1 class="h1 text-center mb-5">Contact Us</h1>
+            <form class="w-100" id="contact-form">
+              <div class="mb-3 form-floating shadow-sm">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  aria-required="true"
+                  required
+                />
+                <label for="name">Name</label>
+              </div>
+              <div class="form-floating shadow-sm mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  aria-required="true"
+                  required
+                />
+                <label for="email">Email address</label>
+              </div>
+              <div class="form-floating shadow-sm mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="mobile"
+                  placeholder="Enter your Mobile Number"
+                  aria-required="true"
+                  pattern="[0-9]{10}"
+                  required
+                />
+                <label for="mobile">Mobile Number</label>
+                <div class="invalid-feedback">
+                  Please enter a valid 10-digit mobile number.
+                </div>
+              </div>
+              <div class="form-floating shadow-sm mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave your message here"
+                  id="message"
+                  style="height: 100px"
+                  aria-required="true"
+                  required
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+              <input
+                type="submit"
+                class="btn btn-dark w-100 mb-3 shadow contact-submit"
+                value="Send"
+              />
+            </form>
+          </div>
+          <div class="col-md-5 px-3 d-flex align-items-stretch">
+            <img
+              src="images/contact-img.jpg"
+              alt="Contact us illustration"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="customer_review" class="p-5">
+      <h1 class="h1 my-5 text-center">Customer Reviews</h1>
+      <div
+        id="testimonialCarousel"
+        class="carousel p-2 carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row text-center">
+              <div class="col-md-6">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img
+                      src="images/c1.jpg"
+                      class="rounded-circle my-3"
+                      alt="John Doe"
+                      width="200"
+                      height="200"
+                    />
+                    <h5 class="card-title">John Doe</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Customer</h6>
+                    <p class="card-text mb-4">
+                      "I absolutely love my new smart watch from Watch Shop. Its
+                      calendar and fitness features have transformed how I
+                      manage my time and health. Stylish, functional, and
+                      perfect for my routine."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img
+                      src="images/c2.jpg"
+                      class="rounded-circle my-3"
+                      alt="Jane Smith"
+                      width="200"
+                      height="200"
+                    />
+                    <h5 class="card-title">Jane Smith</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Customer</h6>
+                    <p class="card-text mb-4">
+                      "The sports watch I purchased is outstanding! It's
+                      incredibly durable and perfect for my intense training
+                      sessions. and it’s a great companion. Highly recommend!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row text-center">
+              <div class="col-md-6">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img
+                      src="images/c4.jpeg"
+                      class="rounded-circle my-3"
+                      alt="Alice Johnson"
+                      width="200"
+                      height="200"
+                    />
+                    <h5 class="card-title">Alice Johnson</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Customer</h6>
+                    <p class="card-text mb-4">
+                      "The luxury watch from Watch Shop is exquisite. The
+                      craftsmanship is top-notch, adding elegance to any outfit.
+                      A perfect blend of traditional watchmaking and modern
+                      style."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img
+                      src="images/c3.jpg"
+                      class="rounded-circle my-3"
+                      alt="Michael Brown"
+                      width="200"
+                      height="200"
+                    />
+                    <h5 class="card-title">Michael Brown</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Customer</h6>
+                    <p class="card-text mb-4">
+                      "I’m thrilled with my new watch! It’s exactly what I was
+                      looking for. The design is sleek, and it has all the
+                      features I need. Excellent service and I’ll definitely be
+                      coming back for more."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-auto py-3 bg-light text-center text-lg-start">
+      <div class="container">
+        <div class="row pt-2">
+          <!-- About Section -->
+          <div class="col-md-5 mb-4">
+            <h5 class="mb-3 card-title">About</h5>
+            <p class="card-text">
+              At Watch Shop, we offer a wide selection of premium timepieces
+              that cater to every style and need. From elegant dress watches to
+              rugged sports models, our collection combines precision
+              craftsmanship with innovative features. Discover the perfect watch
+              to complement your lifestyle today.
+            </p>
+          </div>
+          <!-- Reach at Section -->
+          <div class="col-md-4 ps-5 mb-4">
+            <h5 class="mb-3">Reach at</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown,
+                Mangalore, Karnataka, India
+              </li>
+              <li><i class="fas fa-phone"></i> +91 1234567890</li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:demo@gmail.com">demo@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Subscribe Section -->
+          <div class="col-md-3 mb-4">
+            <h5 class="mb-3">Subscribe</h5>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="subscribeEmail"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-outline-dark form-control">
+                Subscribe
+              </button>
+            </form>
+            <div class="mt-3">
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <span>&copy; 2024 All Rights Reserved By Watch Shop App</span>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

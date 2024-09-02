@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+* {
+    font-family:"SUSE", sans-serif; 
+}
+
+
+.lead {
+    font-family: "Cedarville Cursive", cursive;
+    padding: 5px;
+    font-weight: 500;
+}
+
+/*  Button styles */
+
+.btn {
+    color: #333;
+    background-color: #fff;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width:max-content;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+#watchList .btn::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #f4f4f4;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+#watchList .btn::before {
+    content: "";
+    background: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,purple,deeppink,red);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    background-size: 500%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 5px;
+    filter: blur(2px);
+    transition: opacity 0.3s ease-in-out;
+    animation: glow 20s linear infinite;
+    opacity: 1;
+}
+
+
+@keyframes glow {
+    0% {background-position: 0 0;}
+    50% {background-position: 300% 0;}
+    100% {background-position: 0 0;}
+}
+
+
+/* .box {
+    position: relative;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #f4f4f4;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.box::before {
+    content: "";
+    background: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,purple,deeppink,red);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    background-size: 500%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 5px;
+    filter: blur(2px);
+    transition: opacity 0.3s ease-in-out;
+    animation: glow 20s linear infinite;
+    opacity: 1;
+} */
+
+
+/* footer icon styles */
+
+.btn-outline-dark:hover {
+    background-color: #212529; 
+    color: #f8f9fa; 
+}
+
+
+/* Card hover effect */
+ 
+.box:hover, .watch-list:hover {
+    border-color: #333333; 
+    transform: translateY(1px);
+}
+
+/* watch card */
+
+.watch-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.watch-list {
+    gap: 1rem;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.watch-image {
+    max-width:  60%;
+
+}
